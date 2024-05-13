@@ -1,0 +1,5 @@
+package com.lurodev.ApiGestionInspecciones.Entities;
+
+public enum UserRoles {
+    ADMIN, INSPECTOR, CLIENTE, CONSTRUCTOR, ASESOR_COMERCIAL, DIRECTOR_REGIONAL, DIRECTOR_TECNICO, PROGRAMADOR_AGENDA;
+}

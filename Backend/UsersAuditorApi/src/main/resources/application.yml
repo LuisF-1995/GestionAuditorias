@@ -1,0 +1,33 @@
+server:
+  port: 1901
+  address: 0.0.0.0
+  servlet:
+    context-path: /api/v1/auditor
+
+spring:
+  application:
+    name: UsersAuditorMicroserviceApi
+    security:
+      jwt:
+        secret-key: ${API_SECRET_KEY}
+        expiration: 30 # Expiration value in days
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/auditor_tenants
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+multitenancy:
+  database:
+    default-schema: auditor_tenants
+  http:
+    header-name: TenantId

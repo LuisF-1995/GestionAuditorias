@@ -1,0 +1,66 @@
+.loginAdmincontainer{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.adminLoginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 290px;
+}
+.adminLoginForm > h2 {
+    text-align: center;
+    color: rgb(32, 49, 137);
+    margin: 0;
+}
+
+.adminSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.registerAdmincontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.registerForm{
+    display: flex;
+    height: 100%;
+    width: fit-content;
+}
+
+.nav-bar-option{
+    text-decoration: "none";
+    height: 100%;
+    display: "flex";
+    align-items: center;
+    margin: 0;
+    padding: 0px 5px;
+}
+.nav-bar-option:hover{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+.menuoption-subitem{
+    height: 100%;
+    margin: 0;
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+}
+.menuoption-subitem:hover{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
